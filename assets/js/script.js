@@ -1,18 +1,22 @@
 
-var quizContainer = document.getElementById('quiz');
-var submitButton = document.getElementById('submit');
+var quizContainer = document.getElementById('quizContainer');
+var questionContainer = document.getElementById('questionContainer');
 var getInstructions = document.getElementById('instructions');
+var submitButton = document.getElementById('submit');
+
+var questionNumber = 0;
+var answerA, answerB, answerC, answerD = 0;
 var correct = 0;
 
 
-var question = [
+var questions = [
     {
         question: "Commonly used data types do NOT include:",
         a: "apples",
         b: "strings",
         c: "booleans",
         d: "alerts",
-        answer: "a"
+        correctAnswer: "a"
     },
 
     {
@@ -21,7 +25,7 @@ var question = [
         b: "<scripting>",
         c: "<js>",
         d: "javascript",
-        answer: "a"
+        correctAnswer: "a"
     },
 
     {
@@ -30,7 +34,7 @@ var question = [
         b: "if i == 5 then",
         c: "if i = 5",
         d: "if i = 5 then",
-        answer: "a"
+        correctAnswer: "a"
 
     },
 
@@ -40,7 +44,7 @@ var question = [
         b: "if i =! 5 then",
         c: "if (i !=5)",
         d: "if (i <> 5)",
-        answer: "c"
+        correctAnswer: "c"
 
     },
 
@@ -50,15 +54,19 @@ var question = [
         b: "//This is a comment",
         c: "<!--This is a comment-->",
         d: " !!This is a comment!!",
-        answer: "b"
+        correctAnswer: "b"
     }
 ];
 
 function generateQuiz() {
-    submitButton.innerHTML = "Next";
-
-
-
+    submitButton.innerText = "Submit";
+    document.getElementById('quizContainer');
+    if (questionNumber >= questions.length) {
+        quizContainer.innerHTML = "You got "+correctAnswer+" of "+questions.length+" correct";
+        document.getElementById = ('questionNumber');
+        return;
+    }
+    questionContainer.innerHTML = "<h3>"+questions+"</h3>";
 }
 
 submitButton.addEventListener('click', generateQuiz);

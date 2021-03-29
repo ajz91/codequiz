@@ -22,3 +22,8 @@ h1,p {
     display:flex;
     align-self: flex-end;
 }
+
+#questionContainer {
+    display:flex;
+    height:300px;
+}
