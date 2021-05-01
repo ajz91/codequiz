@@ -19,11 +19,15 @@ h1,p {
 }
 
 #submit {
-    display:flex;
-    align-self: flex-end;
+    display: block;
+    margin: auto;
 }
 
 #questionContainer {
     display:flex;
     height:300px;
+}
+
+#timer {
+    text-align:center
 }
