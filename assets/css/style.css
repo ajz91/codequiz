@@ -21,13 +21,22 @@ h1,p {
 #submit {
     display: block;
     margin: auto;
+    margin-top:20px;
+}
+
+#timer, #quizContainer {
+    text-align:center;
 }
 
 #questionContainer {
-    display:flex;
-    height:300px;
+    text-align:center;
+    padding-bottom:60px;
 }
 
-#timer {
-    text-align:center
+#instructions {
+    padding-bottom:30px;
+}
+
+#quizContainer {
+    padding-bottom:20px;
 }

@@ -12,11 +12,15 @@
         <h1 class="h1title">Javascript Quiz</h1>
         <p id = "instructions">Welcome to the Javascript quiz! Try to answer all questions correctly before the timer ends. See your high score at the end!</p>
         <div id="questionContainer"></div>
-        <button id="submit">Start Quiz</button>
-        <br />
+        <label class='option'><input type='radio' name='option' id='1'><span id='answerA'></span></label>
+        <label class='option'><input type='radio' name='option' id='2'><span id='answerB'></span></label>
+        <label class='option'><input type='radio' name='option' id='3'><span id='answerC'></span></label>
+        <label class='option'><input type='radio' name='option' id='4'><span id='answerD'></span></label>
+            <button id="submit">Start Quiz</button>
+    <br />
         <div id="timer"></div>
     </div>
-    <div id="results"></div>
+        <div id="results"></div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
